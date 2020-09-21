@@ -10,6 +10,11 @@ type Props = {
 export function EmployeeFilter({ value, setValue }: Props) {
   const [isActive, setIsActive] = useState(false)
 
+  function handleClose() {
+    setIsActive(false)
+    setValue('')
+  }
+
   return (
     <Box ml={4}>
       {isActive ? (
@@ -21,7 +26,7 @@ export function EmployeeFilter({ value, setValue }: Props) {
             width="300px"
             autoFocus
           />
-          <IconButton aria-label="close" onClick={() => setIsActive(false)} variant="ghost" ml={1} isRound>
+          <IconButton aria-label="close" onClick={handleClose} variant="ghost" ml={1} isRound>
             <CloseIcon />
           </IconButton>
         </Flex>

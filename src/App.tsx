@@ -1,9 +1,8 @@
 import React from 'react'
-import { Schedule } from './components/Schedule'
-
+import { MainRouter } from './MainRouter'
 
 function App() {
-  return <Schedule />
+  return <MainRouter />
 }
 
 export default App

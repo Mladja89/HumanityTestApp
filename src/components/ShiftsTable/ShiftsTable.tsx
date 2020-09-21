@@ -7,7 +7,7 @@ import { Box } from '@chakra-ui/core'
 import { filterEmployees, isEmployeeInShift, isShiftOnDate } from '../../utils'
 
 const Td = (props: any) => (
-  <Box as="td" width="1px" p={2} border="1px solid" borderColor="gray.200" fontSize="sm" {...props} />
+  <Box as="td" p={2} border="1px solid" borderColor="gray.200" fontSize="sm" {...props} />
 )
 
 type Props = {

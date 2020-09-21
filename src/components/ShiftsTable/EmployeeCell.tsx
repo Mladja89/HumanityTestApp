@@ -9,7 +9,7 @@ type Props = {
 export function EmployeeCell({ employee }: Props) {
   return (
     <Flex py={1}>
-      <Image src={employee.avatar} boxSize="50px" mr={2} />
+      <Image src={employee.avatar} boxSize="50px" mr={2} ignoreFallback />
       <Box>
         <Box>
           {employee.firstName} {employee.lastName}
